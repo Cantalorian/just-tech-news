@@ -15,7 +15,7 @@ async function loginFormHandler(event) {
     });
     
     if (response.ok) {
-      document.location.replace('/');
+      document.location.replace('/dashboard');
     } else {
       alert(response.statusText);
     }
@@ -23,7 +23,7 @@ async function loginFormHandler(event) {
 }
 
 
-async function loginFormHandler(event) {
+async function signupFormHandler(event) {
   event.preventDefault();
   
   const email = document.querySelector('#email-login').value.trim();
